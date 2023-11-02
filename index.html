@@ -8,18 +8,37 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
     <style>
-            body{
+
+        :root {
+            --main-background: hotpink;
+            --main-foreground: silver;
+            --body-background: blue;
+            --body-foreground: red;
+            --nav-background: grey;
+            --nav-foreground: orange;
+            --pane-padding: 5px 42px;
+        }
+        body{
                 font-family: 'DM Sans', sans-serif;
                 font-weight: 300;
+                background-color: var(--body-background);
+                color: var(--body-foreground);
             }
 
             h1, h2, h3, h4 {
                 font-family: 'DM Serif Display', serif;
+                background-color: var(--main-background);
+ 
             }
 
         .bg-dark {
-        background-color: #eff2eb!important;
-}
+        background-color: var(--nav-background)!important;
+
+        }
+         .navbar-dark a {
+         color: var(--nav-foreground)!important;
+        }
+        
         </style>
 
 </head>
