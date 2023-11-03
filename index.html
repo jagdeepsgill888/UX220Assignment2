@@ -14,29 +14,50 @@
             --main-foreground: silver;
             --body-background: blue;
             --body-foreground: red;
-            --nav-background: grey;
-            --nav-foreground: orange;
+            --nav-background: #85CDCA;
+            --nav-foreground: #F9F9F9;
+            --footer-background: #D67659;
+            --footer-foreground: #E6E87C;
             --pane-padding: 5px 42px;
+            --padding-h3: 30px;
+            --main-margin-left: 5%;
+
         }
+
+        main {
+            margin-left: var(--main-margin-left);
+            }
+            
         body{
                 font-family: 'DM Sans', sans-serif;
-                font-weight: 300;
-                background-color: var(--body-background);
-                color: var(--body-foreground);
+                font-weight: 300; 
             }
 
             h1, h2, h3, h4 {
                 font-family: 'DM Serif Display', serif;
-                background-color: var(--main-background);
  
+            }
+
+            h3 {
+            padding:  var(--padding-h3);
+            }
+
+            footer {
+             background-color: var(--footer-background);
+             color: var(--footer-foreground);
             }
 
         .bg-dark {
         background-color: var(--nav-background)!important;
+        color: var(--footer-foreground);
 
         }
          .navbar-dark a {
          color: var(--nav-foreground)!important;
+        }
+
+        p {
+        padding-left: 30px;
         }
         
         </style>
@@ -46,7 +67,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Your Name Here</a>
+            <a class="navbar-brand" href="#">Jagdeep Singh</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
                 aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -75,7 +96,7 @@
         <x-markdown2html src="about.md" id="about"></x-markdown2html>
     </main>
     <footer>
-        <p>Your name here</p>
+        <p>&copy; jagdeep Singh</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
